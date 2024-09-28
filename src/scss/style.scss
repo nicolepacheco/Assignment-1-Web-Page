@@ -2,23 +2,94 @@
     box-shadow: 0px 4px 8px 0px #26323814;
     box-shadow: 0px 2px 4px 0px #26323829;
 
-    .navbar-nav {
+    .navbar-logo {
+        display: flex;
+        align-items: center;
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -1px;
+        text-align: left;
+        text-decoration: none;
+        color: #2D3436;
+        padding-right: 30px;
+        gap: 2px;
 
-        hr {
-            width: 9px;
+        img {
+            color: #6C5CE7;
+            width: 70px;
             height: 64px;
-            color: #FDCB6E;
+        }
+    }
+
+    .navbar-nav {
+        align-items: center;
+
+        &:first-child {
+            margin-left: 36px;
+        }
+
+        &:last-child {
+            margin-right: 36px;
+        }
+
+        .nav-link {
+            //styleName: 18 sp • Paragraph Default;
             font-family: Inter;
             font-size: 18px;
-            font-weight: 700;
+            font-weight: 400;
             line-height: 32px;
-            letter-spacing: 0.20000000298023224px;
             text-align: center;
+            color: #6C5CE7;
 
-            &::before {
+            &.active {
+                //styleName: 18 sp • Paragraph Bold;
+                font-weight: 700;
+                color: #2D3436;
+            }
+
+            &:hover {
+                color: #2D3436;
+            }
+
+        }
+
+
+        hr {
+            opacity: 1;
+            border-top: none;
+            margin: 0;
+
+            &::after {
+                width: 9px;
+                color: #FDCB6E;
+                font-family: Inter;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: 0.2px;
+                text-align: center;
                 content: '•';
             }
         }
+
+    }
+
+    .sign-in-btn {
+        padding: 8px 16px;
+        gap: 0px;
+        border-radius: 16px;
+        opacity: 0px;
+        background: #6C5CE7;
+        color: white;
+        border: none;
+        //styleName: 18 sp • Paragraph Bold;
+        font-family: Inter;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.2px;
+        text-align: center;
     }
 
 }

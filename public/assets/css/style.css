@@ -3,19 +3,78 @@
   box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.0784313725);
   box-shadow: 0px 2px 4px 0px rgba(38, 50, 56, 0.1607843137);
 }
-.navbar .navbar-nav hr {
-  width: 9px;
+.navbar .navbar-logo {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -1px;
+  text-align: left;
+  text-decoration: none;
+  color: #2D3436;
+  padding-right: 30px;
+  gap: 2px;
+}
+.navbar .navbar-logo img {
+  color: #6C5CE7;
+  width: 70px;
   height: 64px;
+}
+.navbar .navbar-nav {
+  align-items: center;
+}
+.navbar .navbar-nav:first-child {
+  margin-left: 36px;
+}
+.navbar .navbar-nav:last-child {
+  margin-right: 36px;
+}
+.navbar .navbar-nav .nav-link {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #6C5CE7;
+}
+.navbar .navbar-nav .nav-link.active {
+  font-weight: 700;
+  color: #2D3436;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #2D3436;
+}
+.navbar .navbar-nav hr {
+  opacity: 1;
+  border-top: none;
+  margin: 0;
+}
+.navbar .navbar-nav hr::after {
+  width: 9px;
   color: #FDCB6E;
   font-family: Inter;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
-  letter-spacing: 0.200000003px;
+  letter-spacing: 0.2px;
   text-align: center;
-}
-.navbar .navbar-nav hr::before {
   content: "•";
+}
+.navbar .sign-in-btn {
+  padding: 8px 16px;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;
+  background: #6C5CE7;
+  color: white;
+  border: none;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
