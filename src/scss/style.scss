@@ -1,0 +1,24 @@
+.navbar {
+    box-shadow: 0px 4px 8px 0px #26323814;
+    box-shadow: 0px 2px 4px 0px #26323829;
+
+    .navbar-nav {
+
+        hr {
+            width: 9px;
+            height: 64px;
+            color: #FDCB6E;
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: center;
+
+            &::before {
+                content: '•';
+            }
+        }
+    }
+
+}
