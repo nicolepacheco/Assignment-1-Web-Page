@@ -77,4 +77,46 @@
   text-align: center;
 }
 
+main .combine {
+  font-family: Inter;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 104px;
+  letter-spacing: -3px;
+  text-align: center;
+  color: #2D3436;
+  text-shadow: white 0px 4px;
+  z-index: 1;
+}
+main .combine span {
+  position: relative;
+  color: #D63031;
+  z-index: 1;
+}
+main .combine span::before {
+  content: "";
+  position: absolute;
+  width: 191px;
+  height: 51px;
+  background-color: #55EFC4;
+  border-radius: 90px;
+  left: -14px;
+  bottom: -2px;
+  z-index: -1;
+}
+main .to-represent {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 77.45px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #2D3436;
+}
+main .bg-rectangle {
+  background: url("rectangle.svg"), url("dots.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
 /*# sourceMappingURL=style.css.map */
