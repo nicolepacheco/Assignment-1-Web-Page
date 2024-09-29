@@ -14,6 +14,23 @@
     text-align: center;
 }
 
+.btn-secondary {
+    padding: 8px 16px;
+    gap: 0px;
+    border-radius: 16px;
+    opacity: 0px;
+    color: #6C5CE7;
+    background: white;
+    border: none;
+    //styleName: 18 sp • Paragraph Bold;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    border: 1px solid #ADADAD
+}
+
 .navbar {
     box-shadow: 0px 4px 8px 0px #26323814;
     box-shadow: 0px 2px 4px 0px #26323829;
@@ -256,4 +273,93 @@ $padding-default: 10px;
     grid-row: 3 / span 4;
     background: url("windows.png") no-repeat;
     background-size: cover;
+}
+
+.deliverring-container {
+    margin: 64px 5% 0 5%;
+
+    h2 {
+        //styleName: 32 sp • H4 Heading;
+        font-family: Inter;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        text-align: left;
+    }
+
+    p.deliverring-subtitle {
+        //styleName: 24 sp • Paragraph Big;
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: -0.25px;
+        text-align: left;
+        max-width: 900px;
+    }
+
+    .features-container {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin: 40px 0 20px 0;
+
+        .feature-item {
+            width: 270px;
+            height: 330px;
+
+            .img-container {
+                width: 70px;
+                height: 70px;
+                background-color: #E84393;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 56px;
+                    height: 56px;
+                }
+            }
+
+            h3 {
+                //styleName: 24 sp • Paragraph Bold;
+                font-family: Inter;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: 0.25px;
+                text-align: left;
+                margin: 24px 0;
+            }
+
+            p {
+                //styleName: 18 sp • Paragraph Default;
+                font-family: Inter;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 32px;
+                text-align: left;
+            }
+
+            &.sales-growth {
+                .img-container {
+                    background-color: #0984E3;
+                }
+            }
+
+            &.coponents-driven {
+                .img-container {
+                    background-color: #6C5CE7;
+                }
+            }
+
+            &.swap-the-icon {
+                .img-container {
+                    background-color: #00B894;
+                }
+            }
+        }
+    }
 }

@@ -14,6 +14,22 @@
   text-align: center;
 }
 
+.btn-secondary {
+  padding: 8px 16px;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;
+  color: #6C5CE7;
+  background: white;
+  border: none;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  border: 1px solid #ADADAD;
+}
+
 .navbar {
   box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.0784313725);
   box-shadow: 0px 2px 4px 0px rgba(38, 50, 56, 0.1607843137);
@@ -212,6 +228,74 @@ main .bg-rectangle {
   grid-row: 3/span 4;
   background: url("windows.png") no-repeat;
   background-size: cover;
+}
+
+.deliverring-container {
+  margin: 64px 5% 0 5%;
+}
+.deliverring-container h2 {
+  font-family: Inter;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+.deliverring-container p.deliverring-subtitle {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  max-width: 900px;
+}
+.deliverring-container .features-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px 0 20px 0;
+}
+.deliverring-container .features-container .feature-item {
+  width: 270px;
+  height: 330px;
+}
+.deliverring-container .features-container .feature-item .img-container {
+  width: 70px;
+  height: 70px;
+  background-color: #E84393;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deliverring-container .features-container .feature-item .img-container img {
+  width: 56px;
+  height: 56px;
+}
+.deliverring-container .features-container .feature-item h3 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  margin: 24px 0;
+}
+.deliverring-container .features-container .feature-item p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.deliverring-container .features-container .feature-item.sales-growth .img-container {
+  background-color: #0984E3;
+}
+.deliverring-container .features-container .feature-item.coponents-driven .img-container {
+  background-color: #6C5CE7;
+}
+.deliverring-container .features-container .feature-item.swap-the-icon .img-container {
+  background-color: #00B894;
 }
 
 /*# sourceMappingURL=style.css.map */
