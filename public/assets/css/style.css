@@ -1,4 +1,19 @@
 @charset "UTF-8";
+.btn-primary {
+  padding: 8px 16px;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;
+  background: #6C5CE7;
+  color: white;
+  border: none;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
 .navbar {
   box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.0784313725);
   box-shadow: 0px 2px 4px 0px rgba(38, 50, 56, 0.1607843137);
@@ -62,20 +77,6 @@
   text-align: center;
   content: "•";
 }
-.navbar .sign-in-btn {
-  padding: 8px 16px;
-  gap: 0px;
-  border-radius: 16px;
-  opacity: 0px;
-  background: #6C5CE7;
-  color: white;
-  border: none;
-  font-family: Inter;
-  font-size: 18px;
-  line-height: 32px;
-  letter-spacing: 0.2px;
-  text-align: center;
-}
 
 main .combine {
   font-family: Inter;
@@ -117,6 +118,100 @@ main .bg-rectangle {
   background: url("rectangle.svg"), url("dots.svg");
   background-position: right top;
   background-repeat: no-repeat;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 270px);
+  grid-auto-rows: min-content;
+  gap: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  width: 100%;
+  margin: 64px 5% 0 5%;
+}
+
+.grid-item {
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.text {
+  grid-column: 1/span 1;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+
+.image-placeholder {
+  grid-column: 1/span 1;
+  height: 464px;
+  background: url("aimed-image.png") no-repeat;
+  background-size: cover;
+}
+
+.button {
+  grid-column: 1/span 1;
+}
+
+.image-large {
+  grid-column: 2/span 2;
+  grid-row: 1/span 2;
+  background: url("it-is-done.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.image-change {
+  grid-column: 2/span 1;
+  grid-row: 3/span 7;
+  background: url("change-by-design.png") no-repeat;
+  background-size: cover;
+}
+
+.image-goal {
+  grid-column: 3/span 2;
+  grid-row: 3/span 8;
+  background: url("see-my-goal.png") no-repeat;
+  background-size: cover;
+}
+
+.text-multipurpose {
+  grid-row: 1/span 1;
+  grid-column: 4/span 2;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+}
+.text-multipurpose p {
+  margin: 0;
+}
+
+.image-A {
+  grid-column: 4/span 1;
+  grid-row: 2/span 1;
+  background: url("letter-a.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.image-nike {
+  grid-column: 5/span 1;
+  grid-row: 2/span 1;
+  background: url("nike.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.image-windows {
+  grid-column: 5/span 1;
+  grid-row: 3/span 4;
+  background: url("windows.png") no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

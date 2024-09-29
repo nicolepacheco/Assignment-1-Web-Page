@@ -1,3 +1,19 @@
+.btn-primary {
+    padding: 8px 16px;
+    gap: 0px;
+    border-radius: 16px;
+    opacity: 0px;
+    background: #6C5CE7;
+    color: white;
+    border: none;
+    //styleName: 18 sp • Paragraph Bold;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
 .navbar {
     box-shadow: 0px 4px 8px 0px #26323814;
     box-shadow: 0px 2px 4px 0px #26323829;
@@ -76,21 +92,6 @@
 
     }
 
-    .sign-in-btn {
-        padding: 8px 16px;
-        gap: 0px;
-        border-radius: 16px;
-        opacity: 0px;
-        background: #6C5CE7;
-        color: white;
-        border: none;
-        //styleName: 18 sp • Paragraph Bold;
-        font-family: Inter;
-        font-size: 18px;
-        line-height: 32px;
-        letter-spacing: 0.2px;
-        text-align: center;
-    }
 }
 
 main {
@@ -140,4 +141,119 @@ main {
         background-position: right top;
         background-repeat: no-repeat;
     }
+}
+
+// Grid variables
+$grid-column-width: 270px;
+$font-family-default: 'Inter';
+$font-size-default: 18px;
+$line-height-default: 32px;
+$border-radius-default: 30px;
+$padding-default: 10px;
+
+// Grid Container
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, $grid-column-width);
+    grid-auto-rows: min-content;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    width: 100%;
+    margin: 64px 5% 0 5%;
+}
+
+// Each grid item style
+.grid-item {
+    border-radius: $border-radius-default;
+    padding: $padding-default;
+    text-align: center;
+}
+
+// First cell text style
+.text {
+    grid-column: 1 / span 1;
+    font-family: $font-family-default;
+    font-size: $font-size-default;
+    font-weight: 400;
+    line-height: $line-height-default;
+    text-align: left;
+}
+
+// Placebolder image
+.image-placeholder {
+    grid-column: 1 / span 1;
+    height: 464px;
+    background: url("aimed-image.png") no-repeat;
+    background-size: cover;
+}
+
+// Button
+.button {
+    grid-column: 1 / span 1;
+}
+
+// Large image
+.image-large {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    background: url("it-is-done.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+// Image "Change"
+.image-change {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 7;
+    background: url("change-by-design.png") no-repeat;
+    background-size: cover;
+}
+
+// Image "Goal"
+.image-goal {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 8;
+    background: url("see-my-goal.png") no-repeat;
+    background-size: cover;
+}
+
+// Text multipurpose
+.text-multipurpose {
+    grid-row: 1 / span 1;
+    grid-column: 4 / span 2;
+    font-family: $font-family-default;
+    font-size: $font-size-default;
+    line-height: $line-height-default;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+
+    p {
+        margin: 0;
+    }
+}
+
+// Image "A"
+.image-A {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+    background: url("letter-a.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+// Image "Nike"
+.image-nike {
+    grid-column: 5 / span 1;
+    grid-row: 2 / span 1;
+    background: url("nike.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+// Image "Windows"
+.image-windows {
+    grid-column: 5 / span 1;
+    grid-row: 3 / span 4;
+    background: url("windows.png") no-repeat;
+    background-size: cover;
 }
