@@ -363,3 +363,42 @@ $padding-default: 10px;
         }
     }
 }
+
+footer {
+    .footer-title {
+        //styleName: 12 sp • MINICAPS;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 14.52px;
+        letter-spacing: 2.5px;
+        text-align: left;
+        text-transform: uppercase;
+        color: rgba($color: #000000, $alpha: 0.32);
+    }
+
+    .social-medias-container {
+        display: flex;
+        gap: 36px;
+
+        img {
+            cursor: pointer;
+
+            &:hover {
+                background-color: #FFEAA7;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .footer-email {
+        //styleName: 32 sp • H4 Heading;
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        text-align: left;
+        color: #6C5CE7;
+    }
+}

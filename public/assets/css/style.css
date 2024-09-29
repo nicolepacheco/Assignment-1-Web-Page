@@ -298,4 +298,35 @@ main .bg-rectangle {
   background-color: #00B894;
 }
 
+footer .footer-title {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 14.52px;
+  letter-spacing: 2.5px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.32);
+}
+footer .social-medias-container {
+  display: flex;
+  gap: 36px;
+}
+footer .social-medias-container img {
+  cursor: pointer;
+}
+footer .social-medias-container img:hover {
+  background-color: #FFEAA7;
+  border-radius: 50%;
+}
+footer .footer-email {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #6C5CE7;
+}
+
 /*# sourceMappingURL=style.css.map */

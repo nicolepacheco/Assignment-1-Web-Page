@@ -256,33 +256,51 @@
 
   <footer class="container py-5">
     <div class="row">
-      <div class="col-12 col-md">
-        social medias
+      <div class="col-md-6">
+        <h2 class="footer-title">follow us</h2>
+        <div class="social-medias-container">
+          <img src="./assets/images/icon-facebook.svg" alt="Facebook Icon">
+          <img src="./assets/images/icon-linkedin.svg" alt="Facebook Icon">
+          <img src="./assets/images/icon-slack.svg" alt="Facebook Icon">
+          <img src="./assets/images/icon-twitter.svg" alt="Facebook Icon">
+        </div>
+        <h2 class="footer-title">information</h2>
+        <div class="row">
+          <div class="col-4">
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none" href="#">About Fapster app</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Get in Touch</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Things We Like</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none" href="#">Onhovered / Active</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Privacy Policy</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none" href="#">We are hiring!</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Resources</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md">
-        <h5>Information</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary text-decoration-none" href="#">About Fapster app</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Get in Touch</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Things We Like</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5></h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary text-decoration-none" href="#">Onhovered / Active</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Privacy Policy</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Terms of Service</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary text-decoration-none" href="#">We are hiring!</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Resources</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md">
-        contact form
+      <div class="col-6 d-none d-md-block">
+        <h2 class="footer-title">follow us</h2>
+        <a class="footer-email" href="mailto:hello@grid.com">hello@grid.com</a>
+        <h2 class="footer-title">keep in touch</h2>
+        <form action="/action_page.php">
+          <input type="text" id="fname" name="firstname" placeholder="Your name">
+
+          <input type="email" id="lname" name="lastname" placeholder="Email">
+
+          <textarea id="subject" name="subject" placeholder="Leave your message|" style="height:80px"></textarea>
+
+          <button type="submit" class="btn-primary">Send</button>
+        </form>
       </div>
     </div>
   </footer>
